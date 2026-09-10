@@ -27,8 +27,8 @@ const docTypes = [
     icon: '💰',
     title: 'Quỹ tài chính',
     desc: 'Quản lý vốn, cho vay - thu nợ nội bộ, lãi vay, quỹ dự phòng rủi ro và báo cáo hoạt động của quỹ tài chính.',
-    href: '/docs/quy_tai_chinh/phan-1-thiet-lap-chung/1.1-cai-dat-va-cac-thiet-lap-can-ban/1.1.1-cai-dat-chuong-trinh-phan-mem-acman-9.1',
-    badge: 'Xem tài liệu',
+    href: '/coming-soon',
+    badge: 'Sắp ra mắt',
   },
 ];
 
