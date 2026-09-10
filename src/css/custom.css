@@ -1,0 +1,1319 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+/* You can override the default Infima variables here. */
+@import "./centered-doc-table.css";
+:root {
+--ifm-font-family-base: "Inter", Arial, sans-serif;
+  --ifm-color-primary: #7C4FE0;
+  --ifm-color-primary-dark: #6B3AD9;
+  --ifm-color-primary-darker: #5C2FBE;
+  --ifm-color-primary-darkest: #4A2394;
+  --ifm-color-primary-light: #9B72EC;
+  --ifm-color-primary-lighter: #C9A9F5;
+  --ifm-color-primary-lightest: #2E1152;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-container-width-xl: 1140px;
+  --ac-red: #7C4FE0;
+  --ac-red-tint: #F3ECFC;
+  --ac-red-deep: #5C2FBE;
+  --ac-pink: #E893C0;
+  --ac-pink-deep: #C15D93;
+  --ac-pink-tint: #FBECF4;
+  --ac-gradient: linear-gradient(135deg, #7C4FE0 0%, #B370D8 55%, #E893C0 100%);
+  --ac-paper: #FAF7FF;
+  --ac-paper-deep: #F3ECFC;
+  --ac-paper-line: #ECE3FB;
+  --ac-graphite: #5C5568;
+  --ac-font-display: "Inter", Arial, sans-serif;
+  --ac-font-mono: "Inter", Arial, sans-serif;
+}
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #7C4FE0;
+  --ifm-color-primary-dark: #6B3AD9;
+  --ifm-color-primary-darker: #5C2FBE;
+  --ifm-color-primary-darkest: #4A2394;
+  --ifm-color-primary-light: #9B72EC;
+  --ifm-color-primary-lighter: #C9A9F5;
+  --ifm-color-primary-lightest: #2E1152;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+/* Đổi font toàn bộ website sang Inter */ 
+
+
+
+
+/* Chỉnh nội dung bài viết */
+.markdown {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* Chỉnh chữ menu bên trái */
+.menu__link {
+  font-size: 15px;
+}
+
+
+/* Chỉnh tiêu đề */
+h1, h2, h3 {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 700;
+}
+/* Đổi toàn bộ font Docusaurus sang Inter */
+
+
+/* Căn ảnh giữa trang */
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html,
+body,
+.navbar,
+.menu,
+.menu__link,
+.markdown,
+.theme-doc-markdown,
+.pagination-nav,
+.table-of-contents {
+  font-family: var(--ifm-font-family-base);
+}
+.img-large {
+  width: 90%;
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+}
+.img-border {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 5px;
+}
+.markdown h1 {
+  font-size: 28px;
+}
+
+.markdown h2 {
+  font-size: 22px;
+}
+
+.markdown h3 {
+  font-size: 18px;
+}
+/* src/css/custom.css */
+
+.markdown img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.theme-doc-markdown img {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  max-width: 100%;
+}
+.theme-doc-markdown img {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 8px;
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+.theme-doc-markdown table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.theme-doc-markdown th,
+.theme-doc-markdown td {
+  text-align: left;
+}
+
+.theme-doc-markdown td.content-left {
+  text-align: left !important;
+}
+.centered-doc-table td.content-left {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.centered-doc-table td table {
+  width: 100%;
+  table-layout: auto;
+  font-size: 0.85em;
+}
+
+.sodu-table,
+.centered-doc-table {
+  width: 100%;
+  max-width: 100%;
+  margin: 30px 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.bctc-table {
+  width: 70%;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+
+.bctc-table th {
+  text-align: center;
+}
+
+.bctc-table td {
+  text-align: left;
+}
+.sodu-table {
+  width: 90%;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+
+.sodu-table th {
+  text-align: center;
+}
+
+.sodu-table td {
+  text-align: center;
+}
+
+.sodu-table td.content-left {
+  text-align: left;
+}
+.chucnang-table {
+  width: 90%;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+
+.chucnang-table th {
+  text-align: center;
+}
+
+.chucnang-table td {
+  text-align: center;
+}
+
+.chucnang-table td.content-left {
+  text-align: left;
+}
+/* Hero animation */
+.hero__title {
+  animation: slideUp 0.7s ease both;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.hero__subtitle {
+  animation: slideUp 0.7s ease 0.2s both;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 400;
+  color: rgba(255,255,255,0.88);
+  margin-top: 0.5rem;
+}
+
+.hero .button {
+  animation: slideUp 0.7s ease 0.4s both, pulse 1.5s ease 1s 2;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.4); }
+  50%       { box-shadow: 0 0 0 8px rgba(255,255,255,0); }
+}
+.account-table {
+  display: table !important;
+  width: 100% !important;
+  table-layout: fixed;
+}
+
+.account-table th {
+  background: #7C4FE0;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.account-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.account-table th:nth-child(1) { width: 6%; }
+.account-table th:nth-child(2) { width: 12%; }
+.account-table th:nth-child(3) { width: 10%; }
+.account-table th:nth-child(4) { width: 10%; }
+.account-table th:nth-child(5) { width: 62%; }
+
+
+
+/* Cột tên tài khoản căn trái */
+
+.account-table td:nth-child(5)
+{
+text-align:left;
+}
+.flex-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flex-row a {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+/* ==========================
+   LEGAL CARD
+========================== */
+
+.legal-card-container{
+    display:flex;
+    gap:24px;
+    margin:28px 0;
+    flex-wrap:wrap;
+}
+
+.legal-card{
+    flex:1;
+    min-width:340px;
+
+    display:flex;
+    gap:18px;
+
+    padding:24px;
+
+    background:#fff;
+
+    border-radius:16px;
+
+    border:1px solid #e5e7eb;
+
+    border-left:6px solid #7C4FE0;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.06);
+
+    transition:.3s ease;
+}
+
+.legal-card:hover{
+    transform:translateY(-6px);
+
+    border-left-color:#7C4FE0;
+
+    box-shadow:0 16px 36px rgba(124, 79, 224,.18);
+}
+
+.legal-icon{
+
+    width:64px;
+    height:64px;
+
+    flex-shrink:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:30px;
+
+    background:#F3ECFC;
+
+    border-radius:50%;
+}
+
+.legal-content{
+
+    flex:1;
+}
+
+.legal-content h3{
+
+    margin:0;
+
+    font-size:21px;
+
+    font-weight:700;
+
+    color:#7C4FE0;
+}
+
+.legal-date{
+
+    display:inline-block;
+
+    margin:10px 0 14px;
+
+    padding:4px 12px;
+
+    background:#F3ECFC;
+
+    color:#7C4FE0;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    font-weight:600;
+}
+
+.legal-content p{
+
+    margin:0;
+
+    line-height:1.8;
+
+    color:#444;
+
+    text-align:justify;
+}
+/* ===========================
+   ACCOUNTING REGULATION CARD
+=========================== */
+
+.accounting-regulation-card{
+    max-width:720px;
+
+    margin:35px auto;
+
+    padding:28px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    border-left:6px solid #7C4FE0;
+
+    box-shadow:0 10px 28px rgba(0,0,0,.08);
+}
+
+.regulation-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:20px;
+}
+
+.regulation-icon{
+
+    width:68px;
+    height:68px;
+
+    border-radius:50%;
+
+    background:#F3ECFC;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:34px;
+
+    flex-shrink:0;
+}
+
+.regulation-header h3{
+
+    margin:0;
+
+    color:#7C4FE0;
+
+    font-size:24px;
+
+    font-weight:700;
+}
+
+.regulation-header span{
+
+    display:block;
+
+    margin-top:6px;
+
+    color:#777;
+
+    font-size:15px;
+}
+
+.regulation-list{
+
+    margin:0;
+
+    padding-left:22px;
+}
+
+.regulation-list li{
+
+    margin:14px 0;
+
+    font-size:17px;
+
+    line-height:1.7;
+}
+
+.regulation-list strong{
+
+    color:#7C4FE0;
+}
+.feature-wrapper{
+
+    max-width:1100px;
+
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    row-gap:80px;
+
+    justify-items:center;
+}
+
+/* Tạo hình chữ W */
+.item-0,
+.item-2,
+.item-4{
+    transform:translateY(0);
+}
+
+.item-1,
+.item-3,
+.item-5{
+    transform:translateY(90px);
+}
+
+/* ===================== */
+
+.feature-circle{
+
+    width:180px;
+    height:180px;
+
+    background:#fff;
+
+    border:2px solid #7C4FE0;
+
+    border-radius:50%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+
+    text-align:center;
+
+    padding:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+    transition:.3s;
+}
+
+.feature-circle:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 16px 35px rgba(124, 79, 224,.20);
+}
+
+.feature-icon{
+
+    font-size:38px;
+
+    margin-bottom:10px;
+}
+
+.feature-text{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    line-height:1.4;
+
+    color:#333;
+}
+
+/* Dấu tích */
+
+.feature-check{
+
+    position:absolute;
+
+    bottom:-16px;
+
+    width:34px;
+    height:34px;
+
+    border-radius:50%;
+
+    background:#7C4FE0;
+
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    border:4px solid #fff;
+
+    box-shadow:0 4px 12px rgba(124, 79, 224,.35);
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.feature-wrapper{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.item-1,
+.item-3,
+.item-5{
+
+transform:none;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.feature-wrapper{
+
+grid-template-columns:1fr;
+
+row-gap:45px;
+
+}
+
+.feature-circle{
+
+width:160px;
+height:160px;
+
+}
+
+.item-0,
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5{
+
+transform:none;
+
+}
+
+}
+/* ===== FOOTER ===== */
+
+.footer__col {
+  text-align: center;
+}
+
+.footer__items {
+  padding: 0;
+}
+
+.footer__bottom {
+  text-align: center;
+  margin-top: 2rem;
+}
+/* ===== NAVBAR ===== */
+
+.navbar {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  padding: 0.5rem 1.5rem;
+}
+
+.navbar__brand {
+  margin-right: 2rem;
+}
+
+.navbar__link {
+  font-weight: 500;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.navbar__link:hover {
+  background: rgba(124, 79, 224, 0.08);
+  color: #5C2FBE;
+}
+
+.navbar__link--active {
+  color: #5C2FBE;
+  font-weight: 700;
+}
+
+/* Nút dark mode toggle */
+.navbar__items--right .clean-btn,
+.navbar__items--right button {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.navbar__items--right .clean-btn:hover,
+.navbar__items--right button:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+body {
+  background:
+    radial-gradient(ellipse 900px 420px at 15% -10%, var(--ac-red-tint) 0%, transparent 55%),
+    radial-gradient(ellipse 700px 380px at 100% 0%, var(--ac-pink-tint) 0%, transparent 50%),
+    var(--ac-paper);
+  background-size: 140% 140%, 140% 140%, 100% 100%;
+  animation: acBgDrift 18s ease-in-out infinite;
+}
+
+@keyframes acBgDrift {
+  0% {
+    background-position: 0% 0%, 100% 0%, 0 0;
+  }
+  50% {
+    background-position: 10% 6%, 90% 8%, 0 0;
+  }
+  100% {
+    background-position: 0% 0%, 100% 0%, 0 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+  }
+}
+/* 1. Nới khung chứa tổng của trang docs (mặc định Docusaurus giới hạn ~1140px) */
+.container {
+  max-width: 1400px !important;
+}
+main .container {
+    max-width: 100% !important;
+}
+
+/* 2. Nới cột nội dung chính, thu hẹp khoảng trống 2 bên do grid cột để lại */
+.docItemCol_ {
+  max-width: 100% !important;
+  flex: 1 1 auto !important;
+}
+/* Lưu ý: Docusaurus thường gắn thêm hash ngẫu nhiên vào class module,
+   ví dụ .docItemCol_VOVn — bạn bấm Inspect vào cột content để lấy đúng class */
+
+/* 3. Card nội dung chính — giảm padding ngang, tăng chiều rộng thực tế */
+.theme-doc-markdown {
+  background: #fff;
+  border: 1px solid var(--ac-paper-line);
+  border-radius: 12px;
+  box-shadow: 0 20px 50px -32px rgba(20,20,15,.25);
+  padding: 44px 48px;      /* giảm từ 52px xuống, đỡ ăn vào chiều rộng chữ */
+  max-width: none;         /* bỏ giới hạn max-width nếu theme có set sẵn */
+  width: 100%;
+}
+
+/* 4. Cho chữ trong card giãn theo, không bị bó hẹp bởi ch-unit */
+.theme-doc-markdown p,
+.theme-doc-markdown li {
+  max-width: none;
+}
+.theme-doc-sidebar-container {
+  background: var(--ac-paper-deep);
+}
+
+.menu__link--active {
+  background: var(--ac-red-tint) !important;
+  color: var(--ac-red-deep) !important;
+  box-shadow: inset 2px 0 0 var(--ac-red);
+}
+
+/* ==========================
+   TRANG CHỦ ACMan — Hero + 4 card nổi
+   ========================== */
+
+.acHomeMain {
+  overflow: visible;
+}
+
+/* HERO — đã nới ra để không lọt hết vào 1 màn hình, đạt tổng ~910-930px */
+.acHero {
+  position: relative;
+  min-height: 0;
+  padding: 56px 5vw 76px;
+  margin: 0;
+  text-align: left;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 620px 420px at 78% 40%, rgba(230, 210, 255, 0.38) 0%, transparent 68%),
+    radial-gradient(ellipse 700px 420px at 8% 30%, rgba(243, 236, 252, 0.8) 0%, transparent 72%),
+    linear-gradient(110deg, #fff 0%, #FAF7FF 48%, #F3ECFC 100%);
+}
+
+/* Decorative glow */
+.acHero::before,
+.acHero::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(2px);
+}
+
+.acHero::before {
+  width: 520px;
+  height: 520px;
+  left: 38%;
+  top: -260px;
+  background: radial-gradient(circle, rgba(124, 79, 224, 0.07), transparent 68%);
+}
+
+.acHero::after {
+  width: 420px;
+  height: 420px;
+  right: 18%;
+  bottom: -260px;
+  background: radial-gradient(circle, rgba(232, 147, 192, 0.14), transparent 68%);
+}
+
+.acHeroInner {
+  position: relative;
+  z-index: 2;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(480px, 0.98fr);
+  align-items: center;
+  gap: clamp(20px, 4vw, 70px);
+}
+
+/* LEFT */
+.acHeroContent {
+  max-width: 720px;
+}
+
+.acEyebrow {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ac-red);
+}
+
+.acHeroTitle {
+  margin: 0 0 14px;
+  font-family: var(--ac-font-display);
+  font-size: clamp(1.75rem, 2.6vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.22;
+  letter-spacing: -0.03em;
+  color: #4A3B70;
+}
+
+.acGlow {
+  background: var(--ac-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(0 4px 16px rgba(124, 79, 224, 0.18));
+}
+
+.acHeroSubtitle {
+  max-width: 650px;
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.acSearchBox {
+  position: relative;
+  width: min(100%, 580px);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+  padding: 0 16px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid var(--ac-paper-line);
+  border-radius: 999px;
+  box-shadow:
+    0 12px 35px rgba(90, 40, 90, 0.08),
+    0 2px 5px rgba(90, 40, 90, 0.03);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.acSearchBox:hover,
+.acSearchBox:focus-within {
+  transform: translateY(-1px);
+  box-shadow:
+    0 16px 40px rgba(90, 40, 90, 0.1),
+    0 0 0 3px rgba(232, 147, 192, 0.14);
+}
+
+.acSearchIcon {
+  flex: 0 0 auto;
+  width: 19px;
+  height: 19px;
+  margin-right: 10px;
+  color: #444;
+}
+
+.acSearchInput {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #222;
+  font: inherit;
+  font-size: 14px;
+}
+
+.acSearchInput::placeholder {
+  color: #777;
+}
+
+.acSearchExample {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #666;
+}
+
+/* RIGHT — ACMan software preview, nghiêng nhiều hơn để tạo cảm giác 3D rõ hơn */
+.acHeroVisual {
+  position: relative;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -40px;
+  perspective: 1400px;
+}
+
+.acProductFrame {
+  position: relative;
+  width: min(980px, 100%);
+  padding: 8px;
+  border: 1px solid rgba(124, 79, 224, 0.18);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow:
+    0 30px 65px rgba(90, 40, 90, 0.18),
+    0 8px 25px rgba(200, 110, 180, 0.1);
+  transform: rotateX(6deg) rotateY(-10deg) rotate(2.5deg) translateY(4px);
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.acProductFrame:hover {
+  transform: rotateX(2deg) rotateY(-4deg) rotate(0.5deg) translateY(-6px) scale(1.015);
+  box-shadow:
+    0 38px 75px rgba(100, 25, 25, 0.2),
+    0 10px 30px rgba(100, 25, 25, 0.1);
+}
+
+.acProductImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  border: 0 !important;
+  border-radius: 10px;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.acVisualIcon {
+  position: absolute;
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(124, 79, 224, 0.16);
+  box-shadow: 0 10px 25px rgba(50, 20, 20, 0.12);
+  font-size: 20px;
+}
+
+.acVisualIconBook {
+  left: -20px;
+  top: 28%;
+  color: var(--ac-red);
+}
+
+.acVisualIconChart {
+  right: -12px;
+  bottom: 12%;
+  color: var(--ac-pink-deep);
+}
+
+/* 4 CARDS — đổi margin âm thành dương để giãn ra khỏi hero */
+.acGridWrap {
+  position: relative;
+  z-index: 10;
+  max-width: 1100px;
+  margin: -70px auto 0;
+  padding: 0 32px 56px;
+}
+
+.acGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.acCard {
+  min-height: 260px;
+  padding: 24px 22px 18px;
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid #e7e3e0;
+  border-radius: 16px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  box-shadow:
+    0 14px 35px rgba(25, 20, 15, 0.08),
+    0 2px 8px rgba(25, 20, 15, 0.03);
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.acCard:hover {
+  text-decoration: none;
+  transform: translateY(-8px);
+  border-color: rgba(124, 79, 224, 0.38);
+  box-shadow:
+    0 22px 45px rgba(25, 20, 15, 0.12),
+    0 0 30px rgba(124, 79, 224, 0.08);
+}
+
+.acCardIndex {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--ac-red);
+}
+
+.acCardIcon {
+  width: 40px;
+  height: 40px;
+  margin: 10px 0 12px;
+  border-radius: 11px;
+  background: var(--ac-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 0 8px 18px rgba(124, 79, 224, 0.18);
+}
+
+.acCardTitle {
+  font-family: var(--ac-font-display);
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #171717;
+}
+
+.acCardDesc {
+  font-size: 12.5px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  flex: 1;
+}
+
+.acCardLink {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ac-red-deep);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.acCardLink::after {
+  content: "→";
+  transition: transform 0.18s ease;
+}
+
+.acCard:hover .acCardLink::after {
+  transform: translateX(4px);
+}
+
+/* Dark mode */
+[data-theme='dark'] .acHero {
+  background:
+    radial-gradient(ellipse 620px 420px at 78% 40%, rgba(124, 79, 224, 0.22) 0%, transparent 68%),
+    #1C1826;
+}
+
+[data-theme='dark'] .acHeroTitle,
+[data-theme='dark'] .acCardTitle {
+  color: #f4eee5;
+}
+
+[data-theme='dark'] .acHeroSubtitle,
+[data-theme='dark'] .acSearchExample,
+[data-theme='dark'] .acCardDesc {
+  color: #c9c1bd;
+}
+
+[data-theme='dark'] .acSearchBox,
+[data-theme='dark'] .acCard {
+  background: #211A2E;
+  border-color: #3A2E52;
+}
+
+[data-theme='dark'] .acSearchInput {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .acHero {
+    min-height: 380px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .acHeroInner {
+    grid-template-columns: minmax(0, 1fr) minmax(380px, 0.9fr);
+    gap: 24px;
+  }
+
+  .acHeroTitle {
+    font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  }
+
+  .acGrid {
+    gap: 16px;
+  }
+
+  .acCard {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  .acHero {
+    min-height: auto;
+    padding: 36px 28px 70px;
+  }
+
+  .acHeroInner {
+    grid-template-columns: 1fr;
+  }
+
+  .acHeroContent {
+    max-width: 760px;
+  }
+
+  .acHeroVisual {
+    max-width: 720px;
+    margin: 8px auto 0;
+  }
+
+  .acProductFrame {
+    width: 100%;
+  }
+
+  .acGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .acGridWrap {
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 620px) {
+  .acHero {
+    padding: 30px 18px 55px;
+  }
+
+  .acEyebrow {
+    font-size: 11px;
+  }
+
+  .acHeroTitle {
+    font-size: 1.9rem;
+    line-height: 1.12;
+  }
+
+  .acHeroSubtitle {
+    font-size: 14.5px;
+  }
+
+  .acSearchBox {
+    height: 50px;
+    padding: 0 16px;
+  }
+
+  .acProductFrame {
+    padding: 6px;
+    border-radius: 13px;
+    transform: none;
+  }
+
+  .acProductImage {
+    max-height: 230px;
+  }
+
+  .acVisualIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .acVisualIconBook {
+    left: -5px;
+  }
+
+  .acVisualIconChart {
+    right: -5px;
+  }
+
+  .acGridWrap {
+    margin-top: -28px;
+    padding: 0 18px 40px;
+  }
+
+  .acGrid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .acCard {
+    min-height: 0;
+    padding: 26px 22px 22px;
+  }
+}
+.theme-doc-markdown {
+  max-width: 100% !important;
+}
+.theme-doc-markdown table.centered-doc-table {
+  display: table !important;
+  width: 70% !important;
+}
+/* Tùy chỉnh ô tìm kiếm - to hơn và dùng font Inter */
+.navbar__search-input {
+  width: 280px;
+  height: 42px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+@media (min-width: 997px) {
+  .navbar__search-input {
+    width: 320px;
+  }
+}
+
+/* ==========================
+   FOOTER — đồng bộ sang tím đậm thay vì navy
+   ========================== */
+:root {
+  --ifm-footer-background-color: #2E1657;
+  --ifm-footer-color: #E4D6F5;
+  --ifm-footer-link-color: #D5B8F2;
+  --ifm-footer-link-hover-color: #E893C0;
+  --ifm-footer-title-color: #ffffff;
+}
+
+.footer,
+.footer--dark {
+  background: linear-gradient(140deg, #2E1657 0%, #5C2FBE 65%, #8C4E9E 100%);
+  border-top: 1px solid rgba(232, 147, 192, 0.2);
+}
+
+.footer__title {
+  color: var(--ifm-footer-title-color);
+}
+
+.footer__link-item {
+  color: var(--ifm-footer-link-color);
+  transition: color 0.2s ease;
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-footer-link-hover-color);
+  text-decoration: none;
+}
+
+.footer__copyright {
+  color: rgba(216, 207, 240, 0.65);
+}
+
+/* ==========================
+   3 CARD TRANG CHỦ — lệch sắc nhẹ theo từng mô hình
+   ========================== */
+.acGrid .acCard:nth-child(1) .acCardIcon {
+  background: linear-gradient(135deg, #7C4FE0, #9B72EC);
+  box-shadow: 0 8px 18px rgba(124, 79, 224, 0.22);
+}
+
+.acGrid .acCard:nth-child(2) .acCardIcon {
+  background: linear-gradient(135deg, #9B5FE0, #C57FD8);
+  box-shadow: 0 8px 18px rgba(155, 95, 224, 0.22);
+}
+
+.acGrid .acCard:nth-child(3) .acCardIcon {
+  background: linear-gradient(135deg, #B370D8, #E893C0);
+  box-shadow: 0 8px 18px rgba(200, 110, 180, 0.22);
+}
